@@ -123,13 +123,14 @@ public class FeedPreferences implements Serializable {
     private SkipSilence feedSkipSilence;
     private boolean showEpisodeNotification;
     private final Set<String> tags = new HashSet<>();
+    private boolean deleteIfMissing;
 
     public FeedPreferences(long feedID, AutoDownloadSetting autoDownload, AutoDeleteAction autoDeleteAction,
                            VolumeAdaptionSetting volumeAdaptionSetting, NewEpisodesAction newEpisodesAction,
                            String username, String password) {
         this(feedID, autoDownload, true, autoDeleteAction, volumeAdaptionSetting, username, password,
                 new FeedFilter(), SPEED_USE_GLOBAL, 0, 0, SkipSilence.GLOBAL,
-                false, newEpisodesAction, new HashSet<>());
+                false, newEpisodesAction, new HashSet<>(), false);
     }
 
     public FeedPreferences(long feedID, AutoDownloadSetting autoDownload, boolean keepUpdated,
@@ -137,7 +138,7 @@ public class FeedPreferences implements Serializable {
                             String username, String password, @NonNull FeedFilter filter,
                             float feedPlaybackSpeed, int feedSkipIntro, int feedSkipEnding, SkipSilence feedSkipSilence,
                             boolean showEpisodeNotification, NewEpisodesAction newEpisodesAction,
-                            Set<String> tags) {
+                            Set<String> tags, boolean deleteIfMissing) {
         this.feedID = feedID;
         this.autoDownload = autoDownload;
         this.keepUpdated = keepUpdated;
@@ -153,6 +154,7 @@ public class FeedPreferences implements Serializable {
         this.showEpisodeNotification = showEpisodeNotification;
         this.newEpisodesAction = newEpisodesAction;
         this.tags.addAll(tags);
+        this.deleteIfMissing = deleteIfMissing;
     }
 
     /**
@@ -320,5 +322,13 @@ public class FeedPreferences implements Serializable {
 
     public void setShowEpisodeNotification(boolean showEpisodeNotification) {
         this.showEpisodeNotification = showEpisodeNotification;
+    }
+
+    public boolean getDeleteIfMissing() {
+        return deleteIfMissing;
+    }
+
+    public void setDeleteIfMissing(boolean deleteIfMissing) {
+        this.deleteIfMissing = deleteIfMissing;
     }
 }
