@@ -299,6 +299,9 @@ public class OnlineFeedViewActivity extends AppCompatActivity {
                 feedFromDb.getPreferences().setUsername(username);
                 feedFromDb.getPreferences().setPassword(password);
             }
+            if (feedFromDb.getDownloadUrl().contains("www3.nhk.or.jp/rj/podcast/rss/english.xml")) {
+                feedFromDb.getPreferences().setFeedSkipEnding(61); // dot166: by default, trim tuning info from NHK English news, fixes annoyance I have
+            }
             DBWriter.setFeedPreferences(feedFromDb.getPreferences());
             emitter.onSuccess(feed.getId());
         })
