@@ -193,6 +193,8 @@
         <item quantity="other">New episodes</item>
     </plurals>
     <string name="new_episode_notification_group_text">Your subscriptions have new episodes.</string>
+    <string name="delete_if_missing">Delete if missing</string>
+    <string name="delete_if_missing_summary">Automatically remove episodes from the list if the feed does not have them</string>
 
     <!-- Actions on feeds -->
     <string name="remove_all_inbox_label">Remove all from inbox</string>
