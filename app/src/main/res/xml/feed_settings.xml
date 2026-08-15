@@ -90,6 +90,11 @@
             android:summary="@string/episode_filters_description"
             android:title="@string/episode_filters_label" />
 
+        <SwitchPreferenceCompat
+            android:key="deleteIfMissing"
+            android:title="@string/delete_if_missing"
+            android:summary="@string/delete_if_missing_summary"/>
+
     </PreferenceCategory>
 
     <PreferenceCategory

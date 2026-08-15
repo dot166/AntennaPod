@@ -184,7 +184,7 @@ public abstract class FeedDatabaseWriter {
             }
 
             // identify items to be removed
-            if (removeUnlistedItems) {
+            if (removeUnlistedItems || savedFeed.getPreferences().getDeleteIfMissing()) {
                 Iterator<FeedItem> it = savedFeed.getItems().iterator();
                 while (it.hasNext()) {
                     FeedItem feedItem = it.next();
@@ -211,7 +211,7 @@ public abstract class FeedDatabaseWriter {
             } else {
                 DBWriter.setCompleteFeed(savedFeed).get();
             }
-            if (removeUnlistedItems) {
+            if (removeUnlistedItems || resultFeed.getPreferences().getDeleteIfMissing()) {
                 DBWriter.deleteFeedItems(context, unlistedItems).get();
             }
         } catch (InterruptedException | ExecutionException e) {

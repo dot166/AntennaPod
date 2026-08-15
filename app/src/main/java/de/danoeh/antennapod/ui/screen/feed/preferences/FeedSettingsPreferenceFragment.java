@@ -269,6 +269,15 @@ public class FeedSettingsPreferenceFragment extends PreferenceFragmentCompat {
             new RenameFeedDialog(getActivity(), feed).show();
             return true;
         });
+        SwitchPreferenceCompat deleteIfMissing = findPreference("deleteIfMissing");
+        deleteIfMissing.setChecked(feedPreferences.getDeleteIfMissing());
+        deleteIfMissing.setOnPreferenceChangeListener((preference, newValue) -> {
+            boolean checked = Boolean.TRUE.equals(newValue);
+            feedPreferences.setDeleteIfMissing(checked);
+            DBWriter.setFeedPreferences(feedPreferences);
+            deleteIfMissing.setChecked(checked);
+            return false;
+        });
     }
 
     private void updateAutoDeleteSummary() {
