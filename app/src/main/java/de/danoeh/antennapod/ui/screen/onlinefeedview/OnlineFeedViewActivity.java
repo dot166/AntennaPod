@@ -302,6 +302,9 @@ public class OnlineFeedViewActivity extends AppCompatActivity {
             if (feedFromDb.getDownloadUrl().contains("www3.nhk.or.jp/rj/podcast/rss/english.xml")) {
                 feedFromDb.getPreferences().setFeedSkipEnding(61); // dot166: by default, trim tuning info from NHK English news, fixes annoyance I have
             }
+            if (isNews(feedFromDb.getDownloadUrl())) {
+                feedFromDb.getPreferences().setDeleteIfMissing(true);
+            }
             DBWriter.setFeedPreferences(feedFromDb.getPreferences());
             emitter.onSuccess(feed.getId());
         })
@@ -321,6 +324,18 @@ public class OnlineFeedViewActivity extends AppCompatActivity {
             }
             showErrorDialog(getString(R.string.download_error_parser_exception), error.getMessage());
         });
+    }
+
+    private boolean isNews(String url) {
+        if (url.contains("podcast.voice.api.bbci.co.uk/rss/audio/p05hh4qy")) {
+            return true; // BBC News UK
+        } else if (url.contains("podcast.voice.api.bbci.co.uk/rss/audio/p002vsmz")) {
+            return true; // BBC World News
+        } else if (url.contains("www3.nhk.or.jp/rj/podcast/rss/english.xml")) {
+            return true; // NHK English News
+        } else {
+            return false;
+        }
     }
 
     /**
