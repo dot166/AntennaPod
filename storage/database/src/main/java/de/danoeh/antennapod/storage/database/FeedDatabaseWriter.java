@@ -56,6 +56,21 @@ public abstract class FeedDatabaseWriter {
      * @return The updated Feed from the database if it already existed, or the new Feed from the parameters otherwise.
      */
     public static synchronized Feed updateFeed(Context context, Feed newFeed, boolean removeUnlistedItems) {
+        return updateFeedPair(context, newFeed, removeUnlistedItems).first();
+    }
+
+    /**
+     * Adds new Feeds to the database or updates the old versions if they already exists. If another Feed with the same
+     * identifying value already exists, this method will add new FeedItems from the new Feed to the existing Feed.
+     * These FeedItems will be marked as unread with the exception of the most recent FeedItem.
+     *
+     * @param context Used for accessing the DB.
+     * @param newFeed The new Feed object.
+     * @param removeUnlistedItems The item list in the new Feed object is considered to be exhaustive.
+     *                            I.e. items are removed from the database if they are not in this item list.
+     * @return A pair of the updated Feed from the database if it already existed, or the new Feed from the parameters otherwise and the list of unlisted items, for use in notifier.
+     */
+    public static synchronized Pair<Feed, List<FeedItem>> updateFeedPair(Context context, Feed newFeed, boolean removeUnlistedItems) {
         Feed resultFeed;
         List<FeedItem> unlistedItems = new ArrayList<>();
         List<FeedItem> itemsToAddToQueue = new ArrayList<>();
@@ -229,7 +244,7 @@ public abstract class FeedDatabaseWriter {
             EventBus.getDefault().post(new FeedListUpdateEvent(Collections.emptyList()));
         }
 
-        return resultFeed;
+        return new Pair<>(resultFeed, unlistedItems);
     }
 
     private static String duplicateEpisodeDetails(FeedItem item) {

@@ -19,11 +19,14 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 import de.danoeh.antennapod.model.feed.Feed;
 import de.danoeh.antennapod.model.feed.FeedCounter;
+import de.danoeh.antennapod.model.feed.FeedItem;
 import de.danoeh.antennapod.model.feed.FeedPreferences;
 import de.danoeh.antennapod.net.download.service.R;
 import de.danoeh.antennapod.storage.database.PodDBAdapter;
 
 import de.danoeh.antennapod.ui.notifications.NotificationUtils;
+
+import java.util.List;
 import java.util.Map;
 
 public class NewEpisodesNotification {
@@ -140,5 +143,9 @@ public class NewEpisodesNotification {
         int episodeCount = counters.containsKey(feedId) ? counters.get(feedId) : 0;
         adapter.close();
         return episodeCount;
+    }
+
+    public void updateCounterFromUnlisted(Feed savedFeed, List<FeedItem> unlistedItems) {
+        countersBefore.put(savedFeed.getId(), Integer.max((countersBefore.containsKey(savedFeed.getId()) ? countersBefore.get(savedFeed.getId()) : 0) - unlistedItems.size(), 0));
     }
 }

@@ -17,6 +17,7 @@ import androidx.work.Worker;
 import androidx.work.WorkerParameters;
 import com.google.common.util.concurrent.Futures;
 import com.google.common.util.concurrent.ListenableFuture;
+import de.danoeh.antennapod.model.feed.FeedItem;
 import de.danoeh.antennapod.net.download.service.R;
 import de.danoeh.antennapod.net.download.service.feed.local.LocalFeedUpdater;
 import de.danoeh.antennapod.net.download.service.feed.remote.DefaultDownloaderFactory;
@@ -37,6 +38,7 @@ import de.danoeh.antennapod.model.download.DownloadRequest;
 import de.danoeh.antennapod.net.download.serviceinterface.DownloadRequestBuilder;
 import de.danoeh.antennapod.parser.feed.FeedHandlerResult;
 import de.danoeh.antennapod.storage.database.NonSubscribedFeedsCleaner;
+import de.danoeh.antennapod.storage.database.Pair;
 import de.danoeh.antennapod.storage.preferences.UserPreferences;
 import de.danoeh.antennapod.ui.notifications.NotificationUtils;
 import java.util.ArrayList;
@@ -238,7 +240,12 @@ public class FeedUpdateWorker extends Worker {
             return null;
         }
         feedHandlerResult.feed.setLastRefreshAttempt(System.currentTimeMillis());
-        Feed savedFeed = FeedDatabaseWriter.updateFeed(getApplicationContext(), feedHandlerResult.feed, false);
+        Pair<Feed, List<FeedItem>> feedListPair = FeedDatabaseWriter.updateFeedPair(getApplicationContext(), feedHandlerResult.feed, false);
+        Feed savedFeed = feedListPair.first();
+        List<FeedItem> unlistedItems = feedListPair.second();
+        if (!unlistedItems.isEmpty()) {
+            newEpisodesNotification.updateCounterFromUnlisted(savedFeed, unlistedItems);
+        }
 
         if (request.getFeedfileId() == 0) {
             return savedFeed; // No download logs for new subscriptions
