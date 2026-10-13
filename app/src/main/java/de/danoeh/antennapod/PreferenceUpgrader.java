@@ -8,6 +8,8 @@ import androidx.preference.PreferenceManager;
 
 import de.danoeh.antennapod.system.CrashReportWriter;
 import de.danoeh.antennapod.net.download.serviceinterface.FeedUpdateManager;
+import io.github.dot166.antennapod.BuildConfig;
+import io.github.dot166.antennapod.R;
 import org.apache.commons.lang3.StringUtils;
 
 import java.util.concurrent.TimeUnit;

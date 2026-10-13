@@ -11,7 +11,7 @@ import android.widget.FrameLayout;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
-import de.danoeh.antennapod.R;
+import io.github.dot166.antennapod.R;
 import de.danoeh.antennapod.activity.MainActivity;
 import de.danoeh.antennapod.model.feed.Feed;
 import de.danoeh.antennapod.storage.preferences.UserPreferences;

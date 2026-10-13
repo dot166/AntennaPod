@@ -8,8 +8,8 @@ import androidx.preference.SwitchPreferenceCompat;
 
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
-import de.danoeh.antennapod.R;
-import de.danoeh.antennapod.databinding.DialogSetPasswordBinding;
+import io.github.dot166.antennapod.R;
+import io.github.dot166.antennapod.databinding.DialogSetPasswordBinding;
 import de.danoeh.antennapod.ui.common.Keyboard;
 import de.danoeh.antennapod.storage.preferences.UserPreferences;
 import de.danoeh.antennapod.ui.preferences.screen.AnimatedPreferenceFragment;

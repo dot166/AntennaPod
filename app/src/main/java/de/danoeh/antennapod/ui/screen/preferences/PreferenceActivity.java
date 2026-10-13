@@ -12,7 +12,7 @@ import com.bytehamster.lib.preferencesearch.SearchPreferenceResult;
 import com.bytehamster.lib.preferencesearch.SearchPreferenceResultListener;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.snackbar.Snackbar;
-import de.danoeh.antennapod.R;
+import io.github.dot166.antennapod.R;
 import de.danoeh.antennapod.event.MessageEvent;
 import de.danoeh.antennapod.ui.common.Keyboard;
 import de.danoeh.antennapod.ui.common.ToolbarActivity;

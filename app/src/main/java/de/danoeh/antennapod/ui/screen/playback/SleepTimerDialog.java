@@ -36,9 +36,9 @@ import java.util.List;
 import java.util.Locale;
 import java.util.concurrent.TimeUnit;
 
-import de.danoeh.antennapod.BuildConfig;
-import de.danoeh.antennapod.R;
-import de.danoeh.antennapod.databinding.TimeDialogBinding;
+import io.github.dot166.antennapod.BuildConfig;
+import io.github.dot166.antennapod.R;
+import io.github.dot166.antennapod.databinding.TimeDialogBinding;
 import de.danoeh.antennapod.event.playback.SleepTimerUpdatedEvent;
 import de.danoeh.antennapod.playback.service.PlaybackController;
 import de.danoeh.antennapod.playback.service.PlaybackService;

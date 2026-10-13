@@ -8,7 +8,7 @@ import androidx.annotation.NonNull;
 import androidx.collection.ArrayMap;
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
-import de.danoeh.antennapod.R;
+import io.github.dot166.antennapod.R;
 import de.danoeh.antennapod.storage.preferences.UserPreferences;
 import de.danoeh.antennapod.ui.preferences.screen.AnimatedPreferenceFragment;
 import de.danoeh.antennapod.ui.screen.feed.preferences.SkipPreferenceDialog;

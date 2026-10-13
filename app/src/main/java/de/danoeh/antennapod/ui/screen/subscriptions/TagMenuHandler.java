@@ -4,7 +4,7 @@ import android.content.DialogInterface;
 import android.view.MenuItem;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import de.danoeh.antennapod.R;
+import io.github.dot166.antennapod.R;
 import de.danoeh.antennapod.model.feed.Feed;
 import de.danoeh.antennapod.model.feed.FeedPreferences;
 import de.danoeh.antennapod.storage.database.DBWriter;

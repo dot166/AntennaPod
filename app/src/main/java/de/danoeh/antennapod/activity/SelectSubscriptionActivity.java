@@ -23,11 +23,11 @@ import com.bumptech.glide.request.target.Target;
 import java.util.ArrayList;
 import java.util.List;
 
-import de.danoeh.antennapod.R;
+import io.github.dot166.antennapod.R;
 import de.danoeh.antennapod.ui.appstartintent.MainActivityStarter;
 import de.danoeh.antennapod.ui.common.ThemeSwitcher;
 import de.danoeh.antennapod.storage.database.DBReader;
-import de.danoeh.antennapod.databinding.SubscriptionSelectionActivityBinding;
+import io.github.dot166.antennapod.databinding.SubscriptionSelectionActivityBinding;
 import de.danoeh.antennapod.model.feed.Feed;
 import io.reactivex.rxjava3.core.Observable;
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers;

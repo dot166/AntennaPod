@@ -3,7 +3,7 @@ package de.danoeh.antennapod.ui.screen.preferences;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import androidx.preference.PreferenceManager;
-import de.danoeh.antennapod.R;
+import io.github.dot166.antennapod.R;
 import de.danoeh.antennapod.net.download.serviceinterface.FeedUpdateManager;
 import de.danoeh.antennapod.storage.preferences.UserPreferences;
 import de.danoeh.antennapod.ui.preferences.screen.AnimatedPreferenceFragment;

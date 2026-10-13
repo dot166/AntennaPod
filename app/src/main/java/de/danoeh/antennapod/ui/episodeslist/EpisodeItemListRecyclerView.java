@@ -10,7 +10,7 @@ import androidx.appcompat.view.ContextThemeWrapper;
 import androidx.core.util.Pair;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import de.danoeh.antennapod.R;
+import io.github.dot166.antennapod.R;
 
 public class EpisodeItemListRecyclerView extends RecyclerView {
     private LinearLayoutManager layoutManager;

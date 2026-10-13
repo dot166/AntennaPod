@@ -10,8 +10,8 @@ import androidx.preference.Preference;
 import com.bytehamster.lib.preferencesearch.SearchConfiguration;
 import com.bytehamster.lib.preferencesearch.SearchPreference;
 
-import de.danoeh.antennapod.BuildConfig;
-import de.danoeh.antennapod.R;
+import io.github.dot166.antennapod.BuildConfig;
+import io.github.dot166.antennapod.R;
 import de.danoeh.antennapod.storage.preferences.UserPreferences;
 import de.danoeh.antennapod.ui.common.IntentUtils;
 import de.danoeh.antennapod.ui.preferences.screen.AnimatedPreferenceFragment;
@@ -48,7 +48,7 @@ public class MainPreferencesFragment extends AnimatedPreferenceFragment {
         // This means that your application needs to be open-source under the GPL, too.
         // It must also include a prominent copyright notice.
         int packageHash = getContext().getPackageName().hashCode();
-        if (packageHash != 1790437538 && packageHash != -1190467065) {
+        if (packageHash != 1790437538 && packageHash != -1190467065 && packageHash != -1107940502 && packageHash != -872632251) {
             findPreference(PREF_CATEGORY_PROJECT).setVisible(false);
             Preference copyrightNotice = new Preference(getContext());
             copyrightNotice.setIcon(R.drawable.ic_info_white);
@@ -59,7 +59,7 @@ public class MainPreferencesFragment extends AnimatedPreferenceFragment {
                     + " If you can read this message, the developers of this modification"
                     + " violate the GNU General Public License (GPL).");
             findPreference(PREF_CATEGORY_PROJECT).getParent().addPreference(copyrightNotice);
-        } else if (packageHash == -1190467065) {
+        } else if (packageHash == -1190467065 || packageHash == -1107940502) {
             Preference debugNotice = new Preference(getContext());
             debugNotice.setIcon(R.drawable.ic_info_white);
             debugNotice.getIcon().mutate()
@@ -67,6 +67,16 @@ public class MainPreferencesFragment extends AnimatedPreferenceFragment {
             debugNotice.setOrder(-1);
             debugNotice.setSummary("This is a development version of AntennaPod and not meant for daily use");
             findPreference(PREF_CATEGORY_PROJECT).getParent().addPreference(debugNotice);
+        } else if (packageHash == -1107940502 || packageHash == -872632251) {
+            Preference forkNotice = new Preference(getContext());
+            forkNotice.setIcon(R.drawable.ic_info_white);
+            forkNotice.getIcon().mutate()
+                    .setColorFilter(new PorterDuffColorFilter(0xffcc0000, PorterDuff.Mode.MULTIPLY));
+            forkNotice.setOrder(-1);
+            forkNotice.setSummary("This application is based on AntennaPod."
+                    + " The AntennaPod team does NOT provide support for this unofficial version."
+                    + " This fork is maintained by dot166, please go to her for support.");
+            findPreference(PREF_CATEGORY_PROJECT).getParent().addPreference(forkNotice);
         }
     }
 
@@ -109,16 +119,17 @@ public class MainPreferencesFragment extends AnimatedPreferenceFragment {
                     return true;
                 }
         );
-        findPreference(PREF_DOCUMENTATION).setOnPreferenceClickListener(preference -> {
-            IntentUtils.openInBrowser(getContext(), "https://antennapod.org/documentation/");
-            return true;
-        });
-        findPreference(PREF_VIEW_FORUM).setOnPreferenceClickListener(preference -> {
-            IntentUtils.openInBrowser(getContext(), "https://forum.antennapod.org/");
-            return true;
-        });
+        // I do not have the infrastructure for these preferences
+        //findPreference(PREF_DOCUMENTATION).setOnPreferenceClickListener(preference -> {
+        //    IntentUtils.openInBrowser(getContext(), "https://antennapod.org/documentation/");
+        //    return true;
+        //});
+        //findPreference(PREF_VIEW_FORUM).setOnPreferenceClickListener(preference -> {
+        //    IntentUtils.openInBrowser(getContext(), "https://forum.antennapod.org/");
+        //    return true;
+        //});
         findPreference(PREF_CONTRIBUTE).setOnPreferenceClickListener(preference -> {
-            IntentUtils.openInBrowser(getContext(), "https://antennapod.org/contribute/");
+            IntentUtils.openInBrowser(getContext(), "https://github.com/dot166/AntennaPod/");
             return true;
         });
         findPreference(PREF_SEND_BUG_REPORT).setOnPreferenceClickListener(preference -> {

@@ -3,7 +3,7 @@ package de.test.antennapod.ui;
 import android.content.Intent;
 import androidx.test.rule.ActivityTestRule;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
-import de.danoeh.antennapod.R;
+import io.github.dot166.antennapod.R;
 import de.danoeh.antennapod.ui.screen.preferences.PreferenceActivity;
 import org.junit.Rule;
 import org.junit.Test;

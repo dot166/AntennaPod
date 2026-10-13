@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
-import de.danoeh.antennapod.R;
+import io.github.dot166.antennapod.R;
 import de.danoeh.antennapod.ui.common.CircularProgressBar;
 
 public class DownloadLogItemViewHolder extends RecyclerView.ViewHolder {

@@ -15,7 +15,7 @@ import com.bumptech.glide.load.resource.bitmap.FitCenter;
 import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
 import com.bumptech.glide.request.RequestOptions;
 import com.google.android.material.elevation.SurfaceColors;
-import de.danoeh.antennapod.R;
+import io.github.dot166.antennapod.R;
 import de.danoeh.antennapod.model.feed.Chapter;
 import de.danoeh.antennapod.ui.common.Converter;
 import de.danoeh.antennapod.model.feed.EmbeddedChapterImage;

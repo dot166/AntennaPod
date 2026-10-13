@@ -6,7 +6,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatImageButton;
 import androidx.vectordrawable.graphics.drawable.AnimatedVectorDrawableCompat;
-import de.danoeh.antennapod.R;
+import io.github.dot166.antennapod.R;
 
 public class PlayButton extends AppCompatImageButton {
     private boolean isShowPlay = true;

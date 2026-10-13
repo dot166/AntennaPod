@@ -24,7 +24,7 @@ import java.util.Map;
 import java.util.Random;
 import java.util.zip.GZIPOutputStream;
 
-import de.danoeh.antennapod.BuildConfig;
+import io.github.dot166.antennapod.BuildConfig;
 
 /**
  * Http server for testing purposes

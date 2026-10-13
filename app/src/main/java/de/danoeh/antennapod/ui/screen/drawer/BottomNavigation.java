@@ -13,7 +13,7 @@ import com.google.android.material.badge.BadgeDrawable;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.internal.ViewUtils;
 import com.google.android.material.navigation.NavigationBarView;
-import de.danoeh.antennapod.R;
+import io.github.dot166.antennapod.R;
 import de.danoeh.antennapod.event.FeedItemEvent;
 import de.danoeh.antennapod.event.FeedListUpdateEvent;
 import de.danoeh.antennapod.model.feed.FeedItemFilter;

@@ -8,7 +8,7 @@ import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import java.text.NumberFormat;
 import java.util.Locale;
 
-import de.danoeh.antennapod.R;
+import io.github.dot166.antennapod.R;
 import de.danoeh.antennapod.storage.preferences.UserPreferences;
 
 /**

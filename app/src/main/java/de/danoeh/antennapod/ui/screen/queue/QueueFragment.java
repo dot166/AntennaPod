@@ -42,7 +42,7 @@ import org.greenrobot.eventbus.ThreadMode;
 import java.util.Collections;
 import java.util.List;
 
-import de.danoeh.antennapod.R;
+import io.github.dot166.antennapod.R;
 import de.danoeh.antennapod.activity.MainActivity;
 import de.danoeh.antennapod.ui.episodeslist.EpisodeItemListAdapter;
 import de.danoeh.antennapod.ui.common.ConfirmationDialog;

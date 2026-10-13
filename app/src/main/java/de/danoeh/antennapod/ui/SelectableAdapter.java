@@ -9,7 +9,7 @@ import androidx.activity.OnBackPressedCallback;
 import androidx.fragment.app.FragmentActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
-import de.danoeh.antennapod.R;
+import io.github.dot166.antennapod.R;
 
 import java.util.HashSet;
 

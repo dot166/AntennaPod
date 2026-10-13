@@ -20,7 +20,7 @@ import de.danoeh.antennapod.playback.service.PlaybackService;
 import de.danoeh.antennapod.storage.database.PodDBAdapter;
 import junit.framework.AssertionFailedError;
 
-import de.danoeh.antennapod.R;
+import io.github.dot166.antennapod.R;
 import de.danoeh.antennapod.activity.MainActivity;
 import de.danoeh.antennapod.storage.preferences.UserPreferences;
 import de.danoeh.antennapod.ui.screen.drawer.NavDrawerFragment;

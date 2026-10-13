@@ -12,10 +12,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
-import de.danoeh.antennapod.R;
+import io.github.dot166.antennapod.R;
 import de.danoeh.antennapod.event.MessageEvent;
 import de.danoeh.antennapod.storage.database.DBWriter;
-import de.danoeh.antennapod.databinding.PlaybackSpeedFeedSettingDialogBinding;
+import io.github.dot166.antennapod.databinding.PlaybackSpeedFeedSettingDialogBinding;
 import de.danoeh.antennapod.ui.common.ConfirmationDialog;
 import de.danoeh.antennapod.ui.screen.feed.RemoveFeedDialog;
 import de.danoeh.antennapod.ui.screen.feed.preferences.TagSettingsDialog;

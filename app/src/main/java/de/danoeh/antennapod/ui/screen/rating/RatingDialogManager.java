@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit;
 
 import android.util.Log;
 import androidx.fragment.app.FragmentActivity;
-import de.danoeh.antennapod.BuildConfig;
+import io.github.dot166.antennapod.BuildConfig;
 import de.danoeh.antennapod.storage.database.DBReader;
 import de.danoeh.antennapod.storage.database.StatisticsItem;
 import io.reactivex.rxjava3.core.Observable;

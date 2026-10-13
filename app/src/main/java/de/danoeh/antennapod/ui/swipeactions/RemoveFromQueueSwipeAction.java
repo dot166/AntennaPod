@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.util.Log;
 import androidx.fragment.app.Fragment;
-import de.danoeh.antennapod.R;
+import io.github.dot166.antennapod.R;
 import de.danoeh.antennapod.event.MessageEvent;
 import de.danoeh.antennapod.storage.database.DBReader;
 import de.danoeh.antennapod.storage.database.DBWriter;

@@ -10,7 +10,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
-import de.danoeh.antennapod.R;
+import io.github.dot166.antennapod.R;
 import de.danoeh.antennapod.ui.screen.home.HomeFragment;
 
 public class HomePreferences {

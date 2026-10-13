@@ -12,7 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import de.danoeh.antennapod.R;
+import io.github.dot166.antennapod.R;
 import de.danoeh.antennapod.activity.MainActivity;
 import de.danoeh.antennapod.ui.screen.subscriptions.FeedMenuHandler;
 import de.danoeh.antennapod.ui.screen.subscriptions.HorizontalFeedListAdapter;

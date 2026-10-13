@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-import de.danoeh.antennapod.R;
+import io.github.dot166.antennapod.R;
 
 import java.util.List;
 

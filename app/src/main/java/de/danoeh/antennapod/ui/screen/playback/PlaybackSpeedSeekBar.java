@@ -9,7 +9,7 @@ import android.widget.SeekBar;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.util.Consumer;
-import de.danoeh.antennapod.R;
+import io.github.dot166.antennapod.R;
 
 import java.util.Locale;
 

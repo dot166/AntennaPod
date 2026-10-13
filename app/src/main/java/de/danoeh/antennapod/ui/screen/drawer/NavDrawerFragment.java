@@ -50,7 +50,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import de.danoeh.antennapod.R;
+import io.github.dot166.antennapod.R;
 import de.danoeh.antennapod.activity.MainActivity;
 import de.danoeh.antennapod.ui.screen.preferences.PreferenceActivity;
 import de.danoeh.antennapod.ui.MenuItemUtils;

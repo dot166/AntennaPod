@@ -9,7 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.StringRes;
 
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
-import de.danoeh.antennapod.R;
+import io.github.dot166.antennapod.R;
 import de.danoeh.antennapod.net.download.serviceinterface.DownloadServiceInterface;
 import de.danoeh.antennapod.model.feed.FeedItem;
 import de.danoeh.antennapod.model.feed.FeedMedia;

@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
-import de.danoeh.antennapod.databinding.ShareEpisodeDialogBinding;
+import io.github.dot166.antennapod.databinding.ShareEpisodeDialogBinding;
 import de.danoeh.antennapod.model.feed.FeedItem;
 
 public class ShareDialog extends BottomSheetDialogFragment {

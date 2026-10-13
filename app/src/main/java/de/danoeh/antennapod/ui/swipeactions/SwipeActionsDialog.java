@@ -16,12 +16,12 @@ import androidx.gridlayout.widget.GridLayout;
 import java.util.ArrayList;
 import java.util.List;
 
-import de.danoeh.antennapod.R;
-import de.danoeh.antennapod.databinding.FeeditemlistItemBinding;
-import de.danoeh.antennapod.databinding.SwipeactionsDialogBinding;
-import de.danoeh.antennapod.databinding.SwipeactionsPickerBinding;
-import de.danoeh.antennapod.databinding.SwipeactionsPickerItemBinding;
-import de.danoeh.antennapod.databinding.SwipeactionsRowBinding;
+import io.github.dot166.antennapod.R;
+import io.github.dot166.antennapod.databinding.FeeditemlistItemBinding;
+import io.github.dot166.antennapod.databinding.SwipeactionsDialogBinding;
+import io.github.dot166.antennapod.databinding.SwipeactionsPickerBinding;
+import io.github.dot166.antennapod.databinding.SwipeactionsPickerItemBinding;
+import io.github.dot166.antennapod.databinding.SwipeactionsRowBinding;
 import de.danoeh.antennapod.ui.screen.AllEpisodesFragment;
 import de.danoeh.antennapod.ui.screen.download.CompletedDownloadsFragment;
 import de.danoeh.antennapod.ui.screen.FavoritesFragment;

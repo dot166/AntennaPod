@@ -4,7 +4,7 @@ import android.content.Context;
 import android.view.View;
 import android.widget.EditText;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
-import de.danoeh.antennapod.R;
+import io.github.dot166.antennapod.R;
 
 /**
  * Displays a dialog with a username and password text field and an optional checkbox to save username and preferences.

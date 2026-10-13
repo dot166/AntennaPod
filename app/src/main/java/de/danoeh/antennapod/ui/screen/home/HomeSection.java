@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import de.danoeh.antennapod.ui.episodeslist.EpisodeItemListAdapter;
 import de.danoeh.antennapod.ui.screen.subscriptions.HorizontalFeedListAdapter;
 import de.danoeh.antennapod.ui.episodeslist.HorizontalItemListAdapter;
-import de.danoeh.antennapod.databinding.HomeSectionBinding;
+import io.github.dot166.antennapod.databinding.HomeSectionBinding;
 import de.danoeh.antennapod.ui.episodeslist.FeedItemMenuHandler;
 import de.danoeh.antennapod.ui.screen.subscriptions.FeedMenuHandler;
 import de.danoeh.antennapod.model.feed.Feed;

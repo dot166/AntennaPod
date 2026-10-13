@@ -22,9 +22,9 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
-import de.danoeh.antennapod.R;
-import de.danoeh.antennapod.databinding.FilterDialogBinding;
-import de.danoeh.antennapod.databinding.FilterDialogRowBinding;
+import io.github.dot166.antennapod.R;
+import io.github.dot166.antennapod.databinding.FilterDialogBinding;
+import io.github.dot166.antennapod.databinding.FilterDialogRowBinding;
 import de.danoeh.antennapod.model.feed.FeedItemFilter;
 
 public abstract class ItemFilterDialog extends BottomSheetDialogFragment {

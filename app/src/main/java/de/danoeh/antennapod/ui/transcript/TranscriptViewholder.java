@@ -4,7 +4,7 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import de.danoeh.antennapod.databinding.TranscriptItemBinding;
+import io.github.dot166.antennapod.databinding.TranscriptItemBinding;
 
 public class TranscriptViewholder extends RecyclerView.ViewHolder {
     public final TextView viewTimecode;

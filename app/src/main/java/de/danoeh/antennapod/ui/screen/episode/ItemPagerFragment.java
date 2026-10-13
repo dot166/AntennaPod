@@ -20,7 +20,7 @@ import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
 
-import de.danoeh.antennapod.R;
+import io.github.dot166.antennapod.R;
 import de.danoeh.antennapod.event.FeedItemEvent;
 import de.danoeh.antennapod.model.feed.FeedItem;
 import de.danoeh.antennapod.storage.database.DBReader;

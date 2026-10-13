@@ -7,7 +7,7 @@ import java.lang.ref.WeakReference;
 import android.view.LayoutInflater;
 import androidx.appcompat.app.AlertDialog;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
-import de.danoeh.antennapod.R;
+import io.github.dot166.antennapod.R;
 import de.danoeh.antennapod.storage.database.NavDrawerData;
 import de.danoeh.antennapod.model.feed.Feed;
 import de.danoeh.antennapod.storage.database.DBWriter;
