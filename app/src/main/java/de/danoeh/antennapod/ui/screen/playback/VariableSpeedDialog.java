@@ -16,7 +16,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 import com.google.android.material.chip.Chip;
 import com.google.android.material.snackbar.Snackbar;
-import de.danoeh.antennapod.R;
+import io.github.dot166.antennapod.R;
 import de.danoeh.antennapod.event.playback.SpeedChangedEvent;
 import de.danoeh.antennapod.playback.base.BuildConfig;
 import de.danoeh.antennapod.playback.service.PlaybackController;

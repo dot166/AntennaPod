@@ -11,7 +11,7 @@ import androidx.core.app.ActivityCompat;
 import androidx.preference.Preference;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.snackbar.Snackbar;
-import de.danoeh.antennapod.R;
+import io.github.dot166.antennapod.R;
 import de.danoeh.antennapod.event.FeedItemEvent;
 import de.danoeh.antennapod.event.PlayerStatusEvent;
 import de.danoeh.antennapod.storage.preferences.UsageStatistics;

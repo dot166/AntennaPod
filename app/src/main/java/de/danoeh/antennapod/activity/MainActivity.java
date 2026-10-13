@@ -38,7 +38,7 @@ import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.google.android.material.snackbar.Snackbar;
-import de.danoeh.antennapod.R;
+import io.github.dot166.antennapod.R;
 import de.danoeh.antennapod.event.EpisodeDownloadEvent;
 import de.danoeh.antennapod.event.FeedUpdateRunningEvent;
 import de.danoeh.antennapod.event.MessageEvent;
@@ -600,7 +600,7 @@ public class MainActivity extends CastEnabledActivity implements NavigationToolb
     public void onStart() {
         super.onStart();
         EventBus.getDefault().register(this);
-        new RatingDialogManager(this).showIfNeeded();
+        //new RatingDialogManager(this).showIfNeeded();
         getOnBackPressedDispatcher().addCallback(this, openDefaultPageBackPressedCallback);
         getOnBackPressedDispatcher().addCallback(this, bottomSheetBackPressedCallback);
     }

@@ -3,9 +3,9 @@ package de.danoeh.antennapod.ui.screen.feed;
 import android.os.Bundle;
 import androidx.annotation.Nullable;
 
-import de.danoeh.antennapod.R;
-import de.danoeh.antennapod.databinding.SortDialogItemActiveBinding;
-import de.danoeh.antennapod.databinding.SortDialogItemBinding;
+import io.github.dot166.antennapod.R;
+import io.github.dot166.antennapod.databinding.SortDialogItemActiveBinding;
+import io.github.dot166.antennapod.databinding.SortDialogItemBinding;
 import de.danoeh.antennapod.model.feed.Feed;
 import de.danoeh.antennapod.model.feed.SortOrder;
 import de.danoeh.antennapod.storage.database.DBWriter;

@@ -9,7 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 import com.google.android.material.elevation.SurfaceColors;
-import de.danoeh.antennapod.databinding.TranscriptItemBinding;
+import io.github.dot166.antennapod.databinding.TranscriptItemBinding;
 import de.danoeh.antennapod.event.playback.PlaybackPositionEvent;
 import de.danoeh.antennapod.model.feed.FeedMedia;
 import de.danoeh.antennapod.model.feed.Transcript;

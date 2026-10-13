@@ -8,7 +8,7 @@ import android.view.MotionEvent;
 import android.view.View;
 
 import androidx.fragment.app.FragmentActivity;
-import de.danoeh.antennapod.R;
+import io.github.dot166.antennapod.R;
 import de.danoeh.antennapod.ui.episodeslist.EpisodeItemListAdapter;
 import de.danoeh.antennapod.storage.preferences.UserPreferences;
 import de.danoeh.antennapod.ui.swipeactions.SwipeActions;

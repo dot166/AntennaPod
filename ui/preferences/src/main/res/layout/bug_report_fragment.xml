@@ -307,13 +307,13 @@
             android:textColor="?attr/colorPrimary"
             style="?android:attr/borderlessButtonStyle" />
 
-        <Button
+        <!--<Button
             android:id="@+id/openForumButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/report_bug_forum_title"
             android:layout_marginEnd="8dp"
-            tools:ignore="ButtonStyle" />
+            tools:ignore="ButtonStyle" />-->
 
     </LinearLayout>
 

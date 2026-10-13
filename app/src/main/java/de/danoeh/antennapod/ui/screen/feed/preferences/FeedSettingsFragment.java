@@ -9,7 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import com.google.android.material.appbar.MaterialToolbar;
-import de.danoeh.antennapod.R;
+import io.github.dot166.antennapod.R;
 import de.danoeh.antennapod.model.feed.Feed;
 import de.danoeh.antennapod.storage.database.DBReader;
 import io.reactivex.rxjava3.core.Maybe;

@@ -32,7 +32,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewpager2.widget.ViewPager2;
 
-import de.danoeh.antennapod.R;
+import io.github.dot166.antennapod.R;
 
 import static androidx.viewpager2.widget.ViewPager2.ORIENTATION_HORIZONTAL;
 import static androidx.viewpager2.widget.ViewPager2.ORIENTATION_VERTICAL;

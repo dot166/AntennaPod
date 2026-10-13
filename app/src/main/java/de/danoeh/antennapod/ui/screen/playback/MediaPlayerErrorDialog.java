@@ -6,7 +6,7 @@ import android.text.SpannableString;
 import android.text.style.ForegroundColorSpan;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
-import de.danoeh.antennapod.R;
+import io.github.dot166.antennapod.R;
 import de.danoeh.antennapod.activity.MainActivity;
 import de.danoeh.antennapod.event.PlayerErrorEvent;
 

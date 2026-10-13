@@ -9,8 +9,8 @@ import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
-import de.danoeh.antennapod.R;
-import de.danoeh.antennapod.databinding.ReorderDialogBinding;
+import io.github.dot166.antennapod.R;
+import io.github.dot166.antennapod.databinding.ReorderDialogBinding;
 
 import java.util.ArrayList;
 import java.util.Collections;

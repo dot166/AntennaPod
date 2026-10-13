@@ -13,7 +13,7 @@ import de.danoeh.antennapod.ui.common.Converter;
 import java.io.File;
 import java.net.URLEncoder;
 
-import de.danoeh.antennapod.R;
+import io.github.dot166.antennapod.R;
 import de.danoeh.antennapod.model.feed.Feed;
 import de.danoeh.antennapod.model.feed.FeedItem;
 import de.danoeh.antennapod.model.feed.FeedMedia;

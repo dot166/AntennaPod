@@ -6,9 +6,9 @@ import android.text.TextUtils;
 import android.view.LayoutInflater;
 import androidx.recyclerview.widget.GridLayoutManager;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
-import de.danoeh.antennapod.R;
+import io.github.dot166.antennapod.R;
 import de.danoeh.antennapod.ui.SimpleChipAdapter;
-import de.danoeh.antennapod.databinding.EpisodeFilterDialogBinding;
+import io.github.dot166.antennapod.databinding.EpisodeFilterDialogBinding;
 import de.danoeh.antennapod.model.feed.FeedFilter;
 import de.danoeh.antennapod.ui.view.ItemOffsetDecoration;
 

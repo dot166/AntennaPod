@@ -2,7 +2,7 @@ package de.danoeh.antennapod.ui.screen.drawer;
 
 import androidx.annotation.DrawableRes;
 import androidx.annotation.StringRes;
-import de.danoeh.antennapod.R;
+import io.github.dot166.antennapod.R;
 import de.danoeh.antennapod.ui.screen.FavoritesFragment;
 import de.danoeh.antennapod.ui.screen.AddFeedFragment;
 import de.danoeh.antennapod.ui.screen.AllEpisodesFragment;

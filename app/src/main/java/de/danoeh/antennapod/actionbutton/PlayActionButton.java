@@ -4,7 +4,7 @@ import android.content.Context;
 import android.util.Log;
 import androidx.annotation.DrawableRes;
 import androidx.annotation.StringRes;
-import de.danoeh.antennapod.R;
+import io.github.dot166.antennapod.R;
 import de.danoeh.antennapod.playback.service.PlaybackService;
 import de.danoeh.antennapod.playback.service.PlaybackServiceStarter;
 import de.danoeh.antennapod.storage.database.DBWriter;

@@ -13,8 +13,8 @@ import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
 
-import de.danoeh.antennapod.BuildConfig;
-import de.danoeh.antennapod.R;
+import io.github.dot166.antennapod.BuildConfig;
+import io.github.dot166.antennapod.R;
 import de.danoeh.antennapod.event.PlayerStatusEvent;
 import de.danoeh.antennapod.playback.service.PlaybackController;
 import de.danoeh.antennapod.storage.database.DBReader;

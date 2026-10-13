@@ -14,7 +14,7 @@ import androidx.media3.common.Tracks;
 import androidx.media3.common.TrackSelectionOverride;
 import com.google.android.material.chip.Chip;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
-import de.danoeh.antennapod.R;
+import io.github.dot166.antennapod.R;
 import de.danoeh.antennapod.event.PlayerStatusEvent;
 import de.danoeh.antennapod.playback.service.PlaybackController;
 import org.greenrobot.eventbus.EventBus;

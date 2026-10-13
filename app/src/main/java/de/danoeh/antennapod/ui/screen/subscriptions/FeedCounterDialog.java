@@ -2,7 +2,7 @@ package de.danoeh.antennapod.ui.screen.subscriptions;
 
 import android.content.Context;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
-import de.danoeh.antennapod.R;
+import io.github.dot166.antennapod.R;
 import de.danoeh.antennapod.event.FeedItemEvent;
 import de.danoeh.antennapod.model.feed.FeedCounter;
 import de.danoeh.antennapod.storage.preferences.UserPreferences;

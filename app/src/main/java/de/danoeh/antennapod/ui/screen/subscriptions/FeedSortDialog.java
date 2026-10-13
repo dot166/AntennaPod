@@ -11,7 +11,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-import de.danoeh.antennapod.R;
+import io.github.dot166.antennapod.R;
 import de.danoeh.antennapod.event.FeedItemEvent;
 import de.danoeh.antennapod.storage.preferences.UserPreferences;
 

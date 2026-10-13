@@ -2,7 +2,7 @@ package de.danoeh.antennapod.ui.screen.home.settingsdialog;
 
 import android.content.Context;
 import androidx.annotation.NonNull;
-import de.danoeh.antennapod.R;
+import io.github.dot166.antennapod.R;
 import de.danoeh.antennapod.ui.screen.preferences.ReorderDialog;
 import de.danoeh.antennapod.ui.screen.preferences.ReorderDialogItem;
 

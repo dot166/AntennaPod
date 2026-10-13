@@ -9,7 +9,7 @@ import androidx.annotation.StringRes;
 import androidx.preference.PreferenceManager;
 import androidx.test.filters.LargeTest;
 import androidx.test.rule.ActivityTestRule;
-import de.danoeh.antennapod.R;
+import io.github.dot166.antennapod.R;
 import de.danoeh.antennapod.ui.screen.preferences.PreferenceActivity;
 import de.danoeh.antennapod.net.download.service.episode.autodownload.APCleanupAlgorithm;
 import de.danoeh.antennapod.net.download.service.episode.autodownload.APNullCleanupAlgorithm;

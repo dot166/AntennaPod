@@ -1,7 +1,7 @@
 package de.danoeh.antennapod.ui.screen.preferences;
 
 import android.os.Bundle;
-import de.danoeh.antennapod.R;
+import io.github.dot166.antennapod.R;
 import de.danoeh.antennapod.ui.preferences.screen.AnimatedPreferenceFragment;
 import de.danoeh.antennapod.ui.screen.FavoritesFragment;
 import de.danoeh.antennapod.ui.swipeactions.SwipeActionsDialog;

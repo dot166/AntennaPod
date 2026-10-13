@@ -22,7 +22,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.google.android.material.chip.Chip;
 import com.google.android.material.chip.ChipGroup;
 
-import de.danoeh.antennapod.R;
+import io.github.dot166.antennapod.R;
 import de.danoeh.antennapod.activity.MainActivity;
 import de.danoeh.antennapod.event.MessageEvent;
 import de.danoeh.antennapod.ui.common.Keyboard;

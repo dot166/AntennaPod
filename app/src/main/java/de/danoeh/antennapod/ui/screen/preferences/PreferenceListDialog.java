@@ -4,7 +4,7 @@ import android.content.Context;
 
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
-import de.danoeh.antennapod.R;
+import io.github.dot166.antennapod.R;
 
 public class PreferenceListDialog {
     protected Context context;

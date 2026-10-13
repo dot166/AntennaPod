@@ -16,7 +16,7 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import de.danoeh.antennapod.R;
+import io.github.dot166.antennapod.R;
 
 public class EmptyViewHandler {
     private boolean layoutAdded = false;

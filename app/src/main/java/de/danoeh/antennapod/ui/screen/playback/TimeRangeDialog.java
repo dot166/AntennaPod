@@ -10,7 +10,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import androidx.annotation.NonNull;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
-import de.danoeh.antennapod.R;
+import io.github.dot166.antennapod.R;
 import de.danoeh.antennapod.ui.common.ThemeUtils;
 
 import java.util.Locale;

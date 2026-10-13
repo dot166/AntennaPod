@@ -22,7 +22,7 @@ import java.util.List;
 import java.util.Locale;
 import java.util.concurrent.TimeUnit;
 
-import de.danoeh.antennapod.R;
+import io.github.dot166.antennapod.R;
 import de.danoeh.antennapod.storage.preferences.UserPreferences;
 import de.danoeh.antennapod.net.common.AntennapodHttpClient;
 import de.danoeh.antennapod.model.download.ProxyConfig;

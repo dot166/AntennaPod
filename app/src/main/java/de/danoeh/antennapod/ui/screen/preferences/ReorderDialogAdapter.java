@@ -10,8 +10,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.util.Consumer;
 import androidx.recyclerview.widget.RecyclerView;
-import de.danoeh.antennapod.databinding.ReorderDialogEntryBinding;
-import de.danoeh.antennapod.databinding.ReorderDialogHeaderBinding;
+import io.github.dot166.antennapod.databinding.ReorderDialogEntryBinding;
+import io.github.dot166.antennapod.databinding.ReorderDialogHeaderBinding;
 
 import java.util.List;
 

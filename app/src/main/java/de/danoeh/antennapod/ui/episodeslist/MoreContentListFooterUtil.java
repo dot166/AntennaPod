@@ -3,7 +3,7 @@ package de.danoeh.antennapod.ui.episodeslist;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
-import de.danoeh.antennapod.R;
+import io.github.dot166.antennapod.R;
 
 /**
  * Utility methods for the more_content_list_footer layout.

@@ -11,9 +11,9 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.PopupMenu;
 import com.google.android.material.elevation.SurfaceColors;
-import de.danoeh.antennapod.R;
-import de.danoeh.antennapod.databinding.FloatingSelectMenuBinding;
-import de.danoeh.antennapod.databinding.FloatingSelectMenuItemBinding;
+import io.github.dot166.antennapod.R;
+import io.github.dot166.antennapod.databinding.FloatingSelectMenuBinding;
+import io.github.dot166.antennapod.databinding.FloatingSelectMenuItemBinding;
 
 public class FloatingSelectMenu extends FrameLayout {
     private FloatingSelectMenuBinding viewBinding;

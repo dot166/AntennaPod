@@ -11,10 +11,10 @@ import androidx.annotation.Nullable;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
-import de.danoeh.antennapod.R;
-import de.danoeh.antennapod.databinding.SortDialogBinding;
-import de.danoeh.antennapod.databinding.SortDialogItemActiveBinding;
-import de.danoeh.antennapod.databinding.SortDialogItemBinding;
+import io.github.dot166.antennapod.R;
+import io.github.dot166.antennapod.databinding.SortDialogBinding;
+import io.github.dot166.antennapod.databinding.SortDialogItemActiveBinding;
+import io.github.dot166.antennapod.databinding.SortDialogItemBinding;
 import de.danoeh.antennapod.model.feed.SortOrder;
 
 public class ItemSortDialog extends BottomSheetDialogFragment {

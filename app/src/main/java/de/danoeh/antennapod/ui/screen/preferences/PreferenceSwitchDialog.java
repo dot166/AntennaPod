@@ -7,7 +7,7 @@ import android.view.View;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.materialswitch.MaterialSwitch;
 
-import de.danoeh.antennapod.R;
+import io.github.dot166.antennapod.R;
 
 public class PreferenceSwitchDialog {
     protected Context context;

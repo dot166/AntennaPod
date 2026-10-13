@@ -24,7 +24,7 @@ import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import androidx.core.app.ShareCompat;
 import androidx.core.content.FileProvider;
 import com.google.android.material.snackbar.Snackbar;
-import de.danoeh.antennapod.R;
+import io.github.dot166.antennapod.R;
 import de.danoeh.antennapod.activity.OpmlImportActivity;
 import de.danoeh.antennapod.storage.database.DBReader;
 import de.danoeh.antennapod.model.feed.FeedItem;
